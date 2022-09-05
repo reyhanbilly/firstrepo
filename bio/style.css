@@ -1,0 +1,621 @@
+body{
+    background-image: url("background.jpg");
+    background-size : cover;
+    background-attachment: fixed ;
+    background-position: center;
+    padding : 0;
+    margin : 0;
+    font-family: sans-serif;
+}
+.container
+{
+    margin : 40px auto;
+    
+    width : 50%;
+    height : 100vh;
+    padding : 20px;
+}
+.profile
+{
+    margin : 30px;
+    display : flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.profile img
+{
+    border-radius : 100%;
+    margin : 0;
+}
+.profile .desc
+{
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height : 100px;
+    overflow : hidden;
+    padding : 0px;
+
+}
+.profile .desc h2
+{
+    margin : 15px 0;
+    color : white;
+}
+
+.profile .desc h3
+{
+    margin : 0;
+    color : gray;
+}
+.link
+{
+    height : 80px;
+    border : 2px ridge rgb(96, 93, 93);
+    box-shadow : -3px 3px 15px rgb(96, 93, 93);
+    position : relative;
+    margin : 20px auto;
+    max-width : 400px;
+    display : flex;
+    justify-content : space-around;
+    align-items: center;
+}
+
+.link a
+{
+    opacity : .4;
+    margin : 0 20px;
+    padding : 3px;
+    text-align: center;
+    width : 50px;
+    background : white;
+    border-radius : 100%;
+    color : gray;
+    font-size: 2rem;
+    text-decoration: none;
+    transition : .3s linear;
+
+}
+.link a:hover
+{
+    background : rgb(93, 93, 93);
+    color : white;
+    opacity : 1;
+}
+
+.about
+{
+    height : fit-content;
+    margin : 0px 20px;
+    width : 90%;
+    background : rgb(86, 85, 85);
+    border-radius : 15px;
+    padding : 20px;
+}
+.about-container
+{
+    padding : 10px;
+    display : flex;
+    flex-direction: column; 
+}
+.about h3
+{
+    color : white;   
+    height : 15px;
+    border-radius: 5px;
+    padding : 0;
+    margin : 0;
+}
+.about hr
+{
+    width : 100%;
+    margin : 5px 0;
+}
+
+.about span
+{
+    
+    color : white;
+    font-size : 1.0rem;
+}
+.about-content ul
+{
+    color : white;
+}
+.about-content ul span
+{
+    text-decoration: underline;
+    margin : 20px 0;
+}
+.edu
+{
+    
+    margin : 20px 20px;
+    width : 90%;
+    background : rgb(86, 85, 85);
+    border-radius : 15px;
+    padding : 0px 20px;
+}
+.list-content
+{
+    margin : 20px 0;
+    width : 100%;
+    display : flex;
+    justify-content: space-between;    
+    list-style:square;
+}
+.list-content a
+{
+    transition : .6s ease;
+}
+.list-content:hover a
+{
+    animation : gerak 4s infinite ease; 
+}
+@keyframes gerak
+{
+    0% {translate : 0 0px;}
+    25% {translate : 0 -20px;}
+    50% {translate : 0 0px;}
+    75% {translate : 0 -20px;}
+    100% {translate : 0 0px;}
+}
+.list-container
+{
+    padding : 10px;
+    display : flex;
+    flex-direction: column; 
+}
+.edu h3
+{
+    color : white;   
+    height : 15px;
+    border-radius: 5px;
+    padding : 0;
+    margin : 15px 0;
+}
+.edu hr
+{
+    width : 100%;
+    margin : 5px 0;
+}
+
+.edu span
+{
+    
+    color : white;
+    font-size : 1.0rem;
+}
+.gallery
+{
+    position: relative;
+    left : -30%;
+    width : 150%;
+    background : rgb(86, 85, 85);
+    border-radius : 15px;
+    padding : 0px 20px;
+}
+
+.gallery-container
+{
+    display : flex;
+    flex-direction: column; 
+}
+.gallery h3
+{
+    text-align: center;
+    font-size: 1.2rem;
+    color : white;   
+    height : 15px;
+    border-radius: 5px;
+    padding : 0;
+    margin : 15px 0;
+}
+.gallery hr
+{
+    width : 100%;
+    margin : 5px 0;
+}
+
+.gallery-content
+{
+    display : grid;
+    grid-template-columns: auto auto auto;
+}
+.gallery-content .img-container
+{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin-left : 50px;
+    margin-top : 20px;
+    max-height : 350px;
+    max-width: 400px;
+    overflow : hidden;
+
+}
+.gallery-content .img-container img
+{
+    border : 1px ridge white;
+    width : 80%;
+
+    margin : 10px 0;
+    transition : .6s ease;
+}
+.gallery-content .img-container img:hover
+{
+    scale:1.1;
+}
+.glrcontnt-container
+{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.glrcontnt-container .prvious-next a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 16px;
+}
+
+.glrcontnt-container .prvious-next a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.glrcontnt-container .previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.glrcontnt-container .next {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.glrcontnt-container .round {
+    border-radius: 50%;
+}
+.input-container
+{
+    padding : 20px;
+    margin : 30px 0;
+    gap:5px;
+    display : flex;
+    justify-content: center;
+}
+.input-container input[type="radio"]
+{
+    transition : .6s ease;
+    opacity : .6;
+    width : 1.25rem;
+    height : 1rem;
+}
+.input-container input[type="radio"]:hover
+{
+    scale : 1.2;
+    opacity : 1;
+}
+.container .popup-img
+{
+    display : none;
+    background-color: rgba(33, 32, 32, 0.549);
+    position : fixed;
+    top : 0;
+    left:0;
+    height: 100%;
+    width : 100%;
+}
+.popup-img span
+{
+    position : absolute;
+    top : 0; right:10px;
+    font-size: 60px;
+    font-weight : bolder;
+    color :#fff;
+    cursor : pointer;
+}
+
+.popup-img img
+{
+    background-color: rgba(96, 94, 94, 0.549);
+    position: relative;
+    display: block;
+    margin : 8% auto;
+    object-fit: contain;
+    width: 520px;
+    height: 480px;
+    border :5px ridge white;
+    border-radius:5px;
+
+}
+
+@media all and (min-width : 1025px )and (max-width : 1280px)
+{
+
+    .profile
+{
+    margin : 10px;
+
+}
+.profile img
+{
+
+    margin : 0 10px;
+}
+.profile .desc
+{
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height : 140px;
+    overflow : hidden;
+    padding : 0px;
+
+}
+
+.popup-img img
+{
+    
+    top : 0;
+    left : 0;
+    display : block;
+    margin : 7% auto;
+    width: 500px;
+    height: 500px;
+
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .profile
+    {
+        margin : 10px;
+    }
+    .profile img
+    {
+        border-radius : 100%;
+        margin : 0 10px;
+    }
+    .profile .desc
+{
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height : 140px;
+    overflow : hidden;
+    padding : 0px;
+
+}
+.about-content span
+{
+    font-size : 16px;
+}
+.edu 
+{
+    margin : 10px 5px;
+    width : 100%;
+    padding : 0 5px;
+}
+.edu img
+{
+    width : 80px;
+    height : 80px;
+}
+
+    .popup-img img
+    {
+        top : 0;
+        left : 0;
+        display : block;
+        margin : 10% auto;
+        width: 450px;
+        height: 450px;
+    
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+.container
+{
+    width : 60%;
+}
+.profile img
+{
+    margin : 0 10px;
+    height : 80px;
+    width : 80px;
+}
+.profile h2
+{
+    font-size : 16px;
+}
+.profile .desc h3
+{
+    font-size: 14px;
+}
+.link
+{
+    max-width : 300px;
+}
+.link a
+{   
+    margin : 0 10px;
+    width : 30px;
+    font-size: 22px;
+}
+.about-content span
+{
+    font-size : 0.8rem;
+}
+.edu
+{
+    width : 100%;
+    margin : 10px ;
+    padding : 10px 20px;
+}
+.list-container
+{
+    padding : 5px;
+}
+.about-content ul
+{
+    margin : 10 0;
+    padding : 5px;
+}
+.about-content ul span
+{
+    font-size : 0.7rem;
+}
+.list-content 
+{
+    margin : 10px 0;
+}
+.list-content li{
+    font-size : 0.7rem;
+}
+.list-content img
+{
+    width : 80px;
+    height : 80px;
+}
+    .popup-img img
+    {
+
+        top : 0;
+        left : 0;
+        display : block;
+        margin : 25% auto;
+        width: 250px;
+        height: 350px;
+    
+    }
+    
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container
+    {
+        width : 80%;
+    }
+    .profile
+    {
+        margin :0;
+    }
+    .profile img
+    {
+        margin : 10px;
+        height : 60px;
+        width : 60px;
+    }
+    .desc h2
+    {
+        font-size : 14px;
+    }
+    .profile .desc h3
+    {
+        font-size: 12px;
+    }
+    .link
+    {
+        max-width : 250px;
+        
+    }
+    .link a
+    {
+        margin :0;
+        width : 30px;
+        font-size: 22px;
+    }
+    .about
+    {
+        width : 90%;
+        margin : 0;
+        padding : 15px;
+    }
+
+    .about .about-content span
+    {
+        font-size : 0.6rem;
+    }
+    .edu
+    {
+        width : 90%;
+        margin : 10px 0;
+        padding : 15px;
+    }
+    .list-container
+    {
+        padding : 5px;
+    }
+    .about-content ul
+    {
+        margin : 10 0;
+        padding : 5px;
+    }
+    .about-content ul span
+    {
+        font-size : 0.7rem;
+    }
+    .list-content 
+    {
+        margin : 10px 0;
+    }
+    .list-content li{
+        font-size : 0.7rem;
+    }
+    .list-content img
+    {
+        width : 80px;
+        height : 80px;
+    }
+    .gallery
+    {
+        margin: 20px 0;
+        padding : 0 10px;
+        width : 110%;
+        left : -7%;
+    }
+
+    .gallery-content .img-container
+    {
+    
+    margin : 10px;
+    max-height : 200px;
+    max-width: 200px;
+    overflow : hidden;
+
+    }
+    .gallery-content .img-container img
+    {
+    width : 100%;
+    transition : .6s ease;
+    }
+    .glrcontnt-container .prvious-next a {
+
+        font-size: 1.2rem;
+        margin : 0 5px;
+        padding: 5px;
+    }
+    .input-container
+    {
+        margin : 5px 0;
+        padding : 5px;
+    }
+    .input-container input[type="radio"]
+{
+
+width : .8rem;
+height : .8rem;
+}
+    .popup-img img
+    {   top:0;
+        left : 0;
+        display : block;
+        margin : 50% auto;
+        width: 250px;
+        height: fit-content;
+    }
+}
+
